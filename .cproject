@@ -617,130 +617,130 @@
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-glwidget.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-glwidget.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-glwidget.o</buildTarget>
+				<buildTarget>src/mltview-glwidget.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-glwidget.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-glwidget.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-glwidget.obj</buildTarget>
+				<buildTarget>src/mltview-glwidget.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-main.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-main.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-main.o</buildTarget>
+				<buildTarget>src/mltview-main.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-main.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-main.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-main.obj</buildTarget>
+				<buildTarget>src/mltview-main.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-mainwindow.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-mainwindow.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-mainwindow.o</buildTarget>
+				<buildTarget>src/mltview-mainwindow.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-mainwindow.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-mainwindow.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-mainwindow.obj</buildTarget>
+				<buildTarget>src/mltview-mainwindow.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-mltcontroller.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-mltcontroller.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-mltcontroller.o</buildTarget>
+				<buildTarget>src/mltview-mltcontroller.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-mltcontroller.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-mltcontroller.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-mltcontroller.obj</buildTarget>
+				<buildTarget>src/mltview-mltcontroller.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-moc_glwidget.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-moc_glwidget.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-moc_glwidget.o</buildTarget>
+				<buildTarget>src/mltview-moc_glwidget.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-moc_glwidget.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-moc_glwidget.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-moc_glwidget.obj</buildTarget>
+				<buildTarget>src/mltview-moc_glwidget.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-moc_mainwindow.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-moc_mainwindow.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-moc_mainwindow.o</buildTarget>
+				<buildTarget>src/mltview-moc_mainwindow.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-moc_mainwindow.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-moc_mainwindow.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-moc_mainwindow.obj</buildTarget>
+				<buildTarget>src/mltview-moc_mainwindow.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-moc_mltcontroller.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-moc_mltcontroller.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-moc_mltcontroller.o</buildTarget>
+				<buildTarget>src/mltview-moc_mltcontroller.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-moc_mltcontroller.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-moc_mltcontroller.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-moc_mltcontroller.obj</buildTarget>
+				<buildTarget>src/mltview-moc_mltcontroller.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-qrc_resources.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-qrc_resources.o" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-qrc_resources.o</buildTarget>
+				<buildTarget>src/mltview-qrc_resources.o</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="src/mltviewer-qrc_resources.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="src/mltview-qrc_resources.obj" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>soundmake</buildCommand>
 				<buildArguments>-j${NUMCORES}</buildArguments>
-				<buildTarget>src/mltviewer-qrc_resources.obj</buildTarget>
+				<buildTarget>src/mltview-qrc_resources.obj</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
