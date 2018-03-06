@@ -68,7 +68,7 @@ int MltController::open (const char* url, const char* profile)
 //            m_profile->from_producer (*m_producer);
 #ifdef Q_WS_MAC
         // use SDL for audio, OpenGL for video
-        m_consumer = new Mlt::Consumer (*m_profile, "sdl_audio");
+        m_consumer = new Mlt::Consumer (*m_profile, "null");
 #elif defined(Q_WS_WIN)
         // sdl_preview does not work good on Windows
         m_consumer = new Mlt::Consumer (*m_profile, "sdl");
@@ -76,7 +76,7 @@ int MltController::open (const char* url, const char* profile)
         m_consumer = new Mlt::Consumer (*m_profile, "sdl_preview");
 #endif
         if (m_consumer->is_valid ()) {
-            m_consumer->set("audio_off", 1);
+//            m_consumer->set("audio_off", 1);
 
             // Embed the SDL window in our GUI.
 //            QWidget* widget = qobject_cast<QWidget*> (parent());
