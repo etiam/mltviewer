@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include <Mlt.h>
 
 using namespace Mlt;
@@ -42,19 +43,30 @@ int main(int argc, char **argv)
         outfilename = argv[3];
     }
 
-	Factory::init();
+    Factory::init();
 
     Profile profile("");
     Producer producer(profile, infilename);
-    profile.from_producer (producer);
+    profile.from_producer(producer);
+
+    int width, height;
+    height = profile.height();
+    width = ((int)rint(height * profile.dar())) & ~1;
+    width = std::max(width, 1);
+    height = std::max(height, 1);
+    std::cout << width << " " << height << std::endl;
+
+    profile.set_width(width);
+    profile.set_height(height);
+
     Consumer consumer(profile, "null");
 
     // Prevent scaling to the profile size.
     // Let the sdl consumer do all scaling.
-    consumer.set("rescale", "none");
+//    consumer.set("rescale", "none");
 
     // Automatically exit at end of file.
-    consumer.set("terminate_on_pause", 1);
+//    consumer.set("terminate_on_pause", 1);
 
     consumer.connect(producer);
 
@@ -66,8 +78,8 @@ int main(int argc, char **argv)
 
     printf("tc          = %02d:%02d:%011.8f\n", hours, minutes, seconds - ((minutes * 60) + (hours * 3600)));
 
-    int width = 0;
-    int height = 0;
+    width = 0;
+    height = 0;
 
     auto frame = consumer.get_frame();
     mlt_image_format format = mlt_image_rgb24;
@@ -75,8 +87,9 @@ int main(int argc, char **argv)
 
     SaveFrame(outfilename, image, width, height);
 
+    std::cout << profile.sar() << " " << profile.dar() << std::endl;
     std::cout << width << " " << height << std::endl;
 
-	Factory::close();
-	return 0;
+    Factory::close();
+    return 0;
 }
