@@ -24,9 +24,11 @@
 # include "config.h"
 #endif
 
-#include "mltcontroller.h"
+#include <iostream>
 #include <QWidget>
 #include <QPalette>
+
+#include "mltcontroller.h"
 
 MltController::MltController(QObject *parent)
     : QObject (parent)
@@ -94,6 +96,9 @@ int MltController::open (const char* url, const char* profile)
             // Make an event handler for when a frame's image should be displayed
             m_consumer->listen ("consumer-frame-show", this, (mlt_listener) on_frame_show);
             m_consumer->start ();
+            m_producer->seek(0);
+            m_consumer->get_frame(error);
+
         }
         else {
             // Cleanup on error
@@ -144,12 +149,19 @@ void MltController::setVolume (double volume)
 
 QImage MltController::getImage (void* frame_ptr)
 {
+    static bool once = true;
+
     Mlt::Frame* frame = static_cast<Mlt::Frame*> (frame_ptr);
     int width = 0;
     int height = 0;
     // TODO: change the format if using a pixel shader
     mlt_image_format format = mlt_image_rgb24a;
     const uint8_t* image = frame->get_image (format, width, height);
+    if (once)
+    {
+        std::cout << width << " x " << height << std::endl;
+        once = false;
+    }
     delete frame;
     QImage qimage (width, height, QImage::Format_ARGB32);
     memcpy (qimage.scanLine(0), image, width * height * 4);

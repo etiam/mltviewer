@@ -8,6 +8,7 @@ pkglib_LTLIBRARIES        =
 PHONY                     =
 
 include $(top_srcdir)/src/Makefile.am
+include $(top_srcdir)/test/Makefile.am
 
 EXTRA_DIST                = $(nodist_ov_SOURCES:moc_%.cpp=%.h)
 CLEANFILES                = $(filter moc_%.cpp,$(nodist_ov_SOURCES))
